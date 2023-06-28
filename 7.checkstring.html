@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Check String</title>
+  </head>
+  <body>
+    <div class="name">
+      <h1>Check String</h1>
+    </div>
+    <script>
+      const regexExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      let str = prompt("Enter Mailid: ", "");
+      document.write(regexExp.test(str));
+    </script>
+  </body>
+</html>

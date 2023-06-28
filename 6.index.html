@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Index</title>
+  </head>
+  <body>
+    <div class="name">
+      <h1>Index</h1>
+    </div>
+    <script>
+      function findFirstOccurrence(array, element) {
+        let index = -1;
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] === element) {
+            index = i;
+            break;
+          }
+        }
+        return index;
+      }
+      const array = [1, 2, 3, 4, 5];
+      const element = 3;
+      const index = findFirstOccurrence(array, element);
+      console.log(index);
+      document.write(index);
+    </script>
+  </body>
+</html>
